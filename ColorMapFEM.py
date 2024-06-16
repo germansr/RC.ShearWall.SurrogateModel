@@ -243,9 +243,9 @@ def colorMapVarious(ops,nv,nh,fileStrain,fileDisp,comp,scale=100, title=""):
             skip = 6
             nNodes = (nv+1)*(nh+1)
             nodeDisp = np.zeros((nNodes,skip))
-            for t in range(nNodes):
-                c = skip*t
-                nodeDisp[t,:] = dispRow[c:c+skip]
+            #for t in range(nNodes):
+            #    c = skip*t
+            #    nodeDisp[t,:] = dispRow[c:c+skip]
              
             # x coordinates
             x = []
