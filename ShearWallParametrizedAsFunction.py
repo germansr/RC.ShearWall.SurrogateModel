@@ -204,7 +204,7 @@ def run(t,lw,plbe,pl,pt,webpl,webpt,paxial,wallHeight,compStrength,yieldStrength
     ops.pattern('Plain',1,1)
     
     # GRAVITY LOAD AT THE TOP MIDDLE NODE !
-    midNode = (hSpaces+1)*(vSpaces+1) - hSpaces/2 
+    midNode = int((hSpaces+1)*(vSpaces+1) - hSpaces/2 )
     ops.load(midNode,  0, -Pforce,0.0,0.0,0.0,0.0)	# apply vertical load
 
 
